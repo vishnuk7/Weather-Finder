@@ -8,7 +8,7 @@ export default class extends React.Component{
    
     render() {
         return (
-            <section>
+            <section className="u-center-text">
                 <Title />
                 <Form />
             </section>

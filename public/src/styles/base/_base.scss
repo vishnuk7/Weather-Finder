@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i');
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "Lato",sans-serif;
+  font-weight:  400;
+  font-size:1.6rem ;
+  line-height: 1.7;
+  color:$color-gery-dark;
+  box-sizing: border-box;
+}

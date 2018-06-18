@@ -29,10 +29,7 @@ export default class Form extends React.Component {
             country:data.sys.country,
             humidity:data.main.humidity,
             description:data.weather[0].description,
-<<<<<<< HEAD
             temperature:data.main.temp,
-=======
->>>>>>> 656dab956a92ca900fb613fc66129638141742fb
             error:""
         }));
         }else{
@@ -41,10 +38,7 @@ export default class Form extends React.Component {
                 country:undefined,
                 humidity:undefined,
                 description:undefined,
-<<<<<<< HEAD
                 temperature:undefined,
-=======
->>>>>>> 656dab956a92ca900fb613fc66129638141742fb
                 error:"Please enter city and country"
             }));
         }
@@ -52,16 +46,12 @@ export default class Form extends React.Component {
 
     render(){
         return(
-            <section>
+            <section className="section-form">
                 <form onSubmit={this.getWeather}>
                 <input type="text" name="city" placeholder="City..."/>
                 <input type="text" name="country" placeholder="Country..."/>
-                <button>Get Weather</button>
+                <button className="btn">Get Weather</button>
                 </form>
-<<<<<<< HEAD
-=======
-
->>>>>>> 656dab956a92ca900fb613fc66129638141742fb
                 <WeatherContent state={this.state} />
             </section>
             

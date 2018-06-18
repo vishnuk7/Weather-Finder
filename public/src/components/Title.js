@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Title = () =>(
-    <div>
+    <section className="section-title">
         <h1>Weather Finder</h1>
         <p></p>
-    </div>
+    </section>
 );
 
 export default Title;

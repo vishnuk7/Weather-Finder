@@ -11,15 +11,16 @@ export default class Form extends React.Component {
         temperature:undefined,
         humidity:undefined,
         description:undefined,
+        icon:undefined,
         error:""
     }
 
 
     getWeather = async (e)=>{
-        e.preventDefault(); 
+        e.preventDefault();
         const city = e.target.elements.city.value;
         const country = e.target.elements.country.value;
-        
+
         if(city && country){
         const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
         const data = await api_call.json();
@@ -30,6 +31,7 @@ export default class Form extends React.Component {
             humidity:data.main.humidity,
             description:data.weather[0].description,
             temperature:data.main.temp,
+            icon:data.weather[0].icon,
             error:""
         }));
         }else{
@@ -39,6 +41,7 @@ export default class Form extends React.Component {
                 humidity:undefined,
                 description:undefined,
                 temperature:undefined,
+                icon:undefined,
                 error:"Please enter city and country"
             }));
         }
@@ -54,10 +57,8 @@ export default class Form extends React.Component {
                 </form>
                 <WeatherContent state={this.state} />
             </section>
-            
+
     );
     }
-    
+
 }
-
-

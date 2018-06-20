@@ -1,13 +1,14 @@
 .section-title{
     background-color:$color-primary;
-    padding: 4rem; 
+    height: 20vh;
     font-size: 3rem;
     color: $color-white;
     font-weight: 300;
 }
 
 .section-form{
-    margin-top:1.5rem; 
+    margin-top:1.5rem;
+    height: 60vh;
 
     input[type="text"]{
         padding: .8rem;
@@ -30,7 +31,18 @@
 
     input[type="text"]::-webkit-input-placeholder{
         font-size: 1.5rem;
-        background-color:#fff; 
+        background-color:#fff;
     }
 }
 
+.section-WeatherContent{
+
+}
+
+footer{
+  background-color: #2d3436;
+  color: $color-white;
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
